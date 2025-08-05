@@ -264,3 +264,48 @@ h1{
   font-weight: 300;
   margin-top: 1rem;
 }
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.left-side {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* align subheading & image left */
+}
+
+.subheading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #F5811F; /* UIUC orange or whatever fits your palette */
+}
+
+.left-side img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  color:#edf0f1;
+  padding-top: 100px;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
