@@ -223,3 +223,44 @@ h1{
 .vid{
     padding:50px;
 }
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('green_street.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 0 2rem;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
